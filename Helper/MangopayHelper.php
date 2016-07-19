@@ -28,7 +28,7 @@ class MangopayHelper extends MangoPayApi
         parent::__construct();
         $this->Config->ClientId = $clientId;
         $this->Config->ClientPassword = $clientPassword;
-        $this->Config->TemporaryFolder = sys_get_temp_dir().'/'.$clientId;
+        $this->Config->TemporaryFolder = sys_get_temp_dir();
         $this->Config->BaseUrl = $baseUrl;
         $this->Config->DebugMode = $debug;
         $this->dispatcher = $dispatcher;
